@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SignUp|TicketBooker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Sign Up</h2>
+  <form class="form-horizontal" action="signupvalidation" method="get">
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="text">Name:</label>
+      <div class="col-sm-10">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="text">User Name:</label>
+      <div class="col-sm-10">
+          <input type="text" name="username" class="form-control" id="username" placeholder="Enter unique username">
+      </div>
+      </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="text" name="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+          <input type="password" name="pass" class="form-control" id="pass" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Re-enter Password:</label>
+      <div class="col-sm-10">
+          <input type="password" name="repass" class="form-control" id="repass" placeholder="Re enter password here">
+      </div>
+    </div> 
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="select">Select Security Question:</label>
+      <div class="col-sm-10"> 
+          <select name="questions" id="questions" class="form-control">
+            <option value="movie">What is your favourite movie?</option>
+            <option value="colour">What is your favourite colour?</option>
+            <option value="series">What is your favourite tv series?</option>
+            <option value="dish">What is your favourite dish?</option>
+          </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="text">Your Answer:</label>
+      <div class="col-sm-10">
+          <input type="text" name="answer" class="form-control" id="answer" placeholder="Enter answer of sequrity question">
+      </div>
+      </div>  
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
